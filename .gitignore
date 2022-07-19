@@ -9,3 +9,8 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+bin/com/insignia/*.class
+bin/com/insignia/LinkedList/LinkedListToQueueAdapter.class
+bin/com/insignia/LinkedList/OddEvenList.class
+bin/com/insignia/LinkedList/OddEvenList$LinkedList.class
+bin/com/insignia/LinkedList/OddEvenList$Node.class
