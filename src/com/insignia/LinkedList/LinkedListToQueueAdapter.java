@@ -1,7 +1,7 @@
 package com.insignia.LinkedList;
 
 import java.io.*;
-import java.util.*;
+import java.util.LinkedList;
 
 public class LinkedListToQueueAdapter {
 
@@ -40,7 +40,7 @@ public class LinkedListToQueueAdapter {
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    LinkedListToQueueAdapter st = new LinkedListToStackAdapter();
+    LinkedListToQueueAdapter st = new LinkedListToQueueAdapter();
 
     String str = br.readLine();
     while(str.equals("quit") == false){
