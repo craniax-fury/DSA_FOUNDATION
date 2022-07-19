@@ -1,7 +1,7 @@
 package com.insignia.LinkedList;
 
 import java.io.*;
-import java.util.*;
+import java.util.LinkedList;
 
 public class LinkedListToStackAdapter {
 

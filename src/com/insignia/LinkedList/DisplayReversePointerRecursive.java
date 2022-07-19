@@ -2,7 +2,7 @@ package com.insignia.LinkedList;
 
 import java.io.*;
 
-public class kReverse {
+public class DisplayReversePointerRecursive {
   public static class Node {
     int data;
     Node next;
@@ -331,49 +331,70 @@ public class kReverse {
     }
 
     public void kReverse(int k) {
-      int n=size;
-      
-      if (n <= k) {
-        return;
-      }
-
-      int till = n - (n % k);
-
       LinkedList prev = null;
-      LinkedList curr = new LinkedList();
-      Node node = head;
-      
-      for (int index = 0; index < till; index++) {
-        while(index<till){
-          curr=new LinkedList();
 
-          for(int i=0;i<k;i++){
-            curr.addFirst(node.data);
-            node = node.next;
-            index++;
+      while (this.size > 0) {
+        LinkedList curr = new LinkedList();
+
+        if (this.size >= k) {
+          for (int i = 0; i < k; i++) {
+            int val = this.getFirst();
+            this.removeFirst();
+            curr.addFirst(val);
           }
-
-          if (prev == null) {
-            prev=curr;
-            prev.head = curr.head;
-            prev.tail = curr.tail;
-          }else {
-            prev.tail.next = curr.head;
-            prev.tail = curr.tail;
-            prev.size+=curr.size;
+        } else {
+          int sz = this.size;
+          for (int i = 0; i < sz; i++) {
+            int val = this.getFirst();
+            this.removeFirst();
+            curr.addLast(val);
           }
         }
+
+        if (prev == null) {
+          prev = curr;
+        } else {
+          prev.tail.next = curr.head;
+          prev.tail = curr.tail;
+          prev.size += curr.size;
+        }
       }
-      
-      if(n%k!=0){
-        for(int index=0;index<(n%k);index++){
-            prev.addLast(node.data);
-            node=node.next;
-        }      
+
+      this.head = prev.head;
+      this.tail = prev.tail;
+      this.size = prev.size;
+    }
+
+    private void displayReverseHelper(Node node){
+      if(node == null){
+        return;
       }
-      
-      this.head=prev.head;
-      this.tail=prev.tail;
+      displayReverseHelper(node.next);
+      System.out.print(node.data + " ");
+    }
+
+    public void displayReverse(){
+      displayReverseHelper(head);
+      System.out.println();
+    }
+ 
+    private void reversePRHelper(Node node){
+        
+        if(node==tail){
+            return;
+        }
+        
+        reversePRHelper(node.next);
+        node.next.next=node;
+        
+    }
+
+    public void reversePR(){
+      reversePRHelper(head);
+      head.next=null;
+      Node tempNode=head;
+      head=tail;
+      tail=tempNode;
     }
   }
 
@@ -388,15 +409,13 @@ public class kReverse {
       l1.addLast(d);
     }
 
-    int k = Integer.parseInt(br.readLine());
     int a = Integer.parseInt(br.readLine());
     int b = Integer.parseInt(br.readLine());
 
     l1.display();
-    l1.kReverse(k);
-    l1.display();
-    l1.addFirst(a);
-    l1.addLast(b);
+    l1.reversePR();
+    l1.addLast(a);
+    l1.addFirst(b);
     l1.display();
   }
 }
