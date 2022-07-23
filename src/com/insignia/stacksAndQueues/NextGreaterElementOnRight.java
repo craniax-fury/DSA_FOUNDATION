@@ -1,5 +1,7 @@
 package com.insignia.stacksAndQueues;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -20,38 +22,41 @@ import java.util.Stack;
   */
 public class NextGreaterElementOnRight {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)throws Exception {
 
-        try (Scanner sc = new Scanner(System.in)) {
-            int input_length = sc.nextInt();
-            int[] input = new int[input_length];
+        Stack<Integer> stack = new Stack<>();
 
-            for (int index = 0; index < input_length; index++) {
-                input[index] = sc.nextInt();
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
+            int input_length = Integer.parseInt(reader.readLine());
+            int[] inputArray = new int[input_length];
+            int[] outputArray = new int[input_length];
+
+            for(int index=0;index<input_length;index++){
+                inputArray[index] = Integer.parseInt(reader.readLine());
             }
 
-            Stack<Integer> stack = new Stack<>();
-            int[] output = new int[input_length];
-
-            output[input_length-1]=-1;
-            stack.push(input[input_length-1]);
-
-            for (int index = input_length-2; index >= 0; index--) {
-
-                while(stack.size()>0 && !(stack.peek()>input[index])){
-                    stack.pop();
-                }
-
+            for(int index=0;index<input_length;index++){
                 if(stack.size()==0){
-                    output[index]=-1;
-                    stack.push(input[index]);
-                }else{
-                    output[index]=stack.peek();
-                    stack.push(input[index]);
+                    stack.push(index);
+                
+                }else if(inputArray[stack.peek()]>inputArray[index]){
+                    stack.push(index);
+                
+                }else if(inputArray[stack.peek()]<inputArray[index]){
+                    
+                    while(stack.size()>0 && inputArray[stack.peek()]<=inputArray[index]){
+                        outputArray[stack.pop()]=inputArray[index];
+                    }
+
+                    stack.push(index);
                 }
             }
 
-            for(int val:output){
+            while(stack.size()!=0){
+                outputArray[stack.pop()]=-1;
+            }
+
+            for(int val:outputArray){
                 System.out.println(val);
             }
         }
