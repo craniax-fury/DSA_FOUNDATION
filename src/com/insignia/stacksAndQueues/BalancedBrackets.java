@@ -1,49 +1,53 @@
 package com.insignia.stacksAndQueues;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class BalancedBrackets {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        try (Scanner sc = new Scanner(System.in)) {
-            String input = sc.nextLine();
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            String input = br.readLine();
 
             Stack<Character> stack = new Stack<>();
-            
-            for (int index = 0; index < input.length(); index++) {
 
-                if (input.charAt(index) == '(' || input.charAt(index) == '{' || input.charAt(index) == '[') {
-                    stack.push(input.charAt(index));
-                }else if(input.charAt(index) == ')'){                    
-                    if(stack.peek()!='('){
+            char[] inputChars = input.toCharArray();
+
+            for (Character character : inputChars) {
+                if (character == '[' || character == '{' || character == '(') {
+                    stack.push(character);
+                } else if (character == ')') {
+                    if (stack.size()==0 || stack.peek() != '(') {
                         System.out.println(false);
                         return;
                     }else{
                         stack.pop();
                     }
-                    
-                }else if(input.charAt(index) == '}'){                    
-                    if(stack.peek()!='{'){
+                }else if(character=='}'){
+                    if(stack.size()==0 || stack.peek()!='{'){
                         System.out.println(false);
                         return;
                     }else{
                         stack.pop();
                     }
-                    
-                }else if(input.charAt(index) == ']'){                    
-                    if(stack.peek()!='['){
+                }else if(character==']'){
+                    if(stack.size()==0 || stack.peek()!='['){
                         System.out.println(false);
                         return;
                     }else{
                         stack.pop();
                     }
-                    
                 }
             }
 
-            System.out.println(!(stack.size()>0));
+            if(stack.size()!=0){
+                System.out.println(false);
+            }else{
+                System.out.println(true);
+            }
         }
     }
 }

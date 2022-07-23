@@ -1,65 +1,73 @@
 package com.insignia.stacksAndQueues;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class SlidingWindowMax {
 
-    public static void main(String[] args) {
-
-        try (Scanner sc = new Scanner(System.in)) {
-            int window_size = sc.nextInt();
-
-            int input_length = sc.nextInt();
-
+    public static void main(String[] args) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            int input_length = Integer.parseInt(reader.readLine());
             int[] input = new int[input_length];
 
-            for (int input_index = 0; input_index < input_length; input_index++) {
-                input[input_index] = sc.nextInt();
+            for (int index = 0; index < input_length; index++) {
+                input[index] = Integer.parseInt(reader.readLine());
             }
-            
-            System.out.println("__________________________");
+            int window = Integer.parseInt(reader.readLine());
 
-            int rightOutput[] = nextGreaterEleOnRight(input_length, input);
 
-            int j = 0;
+            int[] ngr = getNextGreaterElementOnTheRight(input_length, input);
 
-            for (int i = 0; i < input_length - window_size; i++) {
-                if (j < i) {
-                    j = i;
+            for (int index = 0; index <= input_length-window; index++) {
+                if (ngr[index] == -1 || ngr[index] > index + window-1) {
+                    System.out.println(input[index]);
+                } else if (ngr[index] <= index + window-1) {
+                    int temp_prev = index;
+                    int temp_curr = index;
+                    while (ngr[temp_curr] <= index + window-1) {
+                        if (ngr[temp_curr] == -1) {
+                            break;
+                        }
+                       
+                         else {
+                            temp_prev = ngr[temp_curr];
+                            temp_curr = ngr[temp_curr];
+                        }
+                    }
+
+                    System.out.println(input[temp_prev]);
                 }
-
-                while (rightOutput[j] < i + window_size) {
-
-                    j = rightOutput[j];
-
-                }
-                System.out.print(" " + input[j]);
-
             }
-
         }
     }
 
-    private static int[] nextGreaterEleOnRight(int input_length, int[] input) {
-        int[] output = new int[input_length];
-
+    private static int[] getNextGreaterElementOnTheRight(int input_length, int[] input) {
         Stack<Integer> stack = new Stack<>();
 
+        int[] ngr = new int[input_length];
+
         for (int index = 0; index < input_length; index++) {
+            if (stack.size() == 0) {
+                stack.push(index);
 
-            while (stack.size() > 0 && (input[stack.peek()] < input[index])) {
-                output[stack.peek()] = index;
-                stack.pop();
+            } else if (input[index] < input[stack.peek()]) {
+                stack.push(index);
+
+            } else if (input[stack.peek()] < input[index]) {
+                while (stack.size() > 0 && input[stack.peek()] < input[index]) {
+                    ngr[stack.pop()] = index;
+                }
+
+                stack.push(index);
             }
-            stack.push(index);
         }
 
-        while (stack.size() > 0) {
-            output[stack.peek()] = input_length;
-            stack.pop();
+        while (stack.size() != 0) {
+            ngr[stack.pop()] = -1;
         }
 
-        return output;
+        return ngr;
     }
 }
