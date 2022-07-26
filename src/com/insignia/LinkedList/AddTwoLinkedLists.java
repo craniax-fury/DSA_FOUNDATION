@@ -1,4 +1,4 @@
-package com.insignia.LinkedList;
+package com.insignia.linkedList;
 import java.io.*;
 
 public class AddTwoLinkedLists {

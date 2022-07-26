@@ -1,4 +1,4 @@
-package com.insignia.LinkedList;
+package com.insignia.linkedList;
 
 public class LinkedList{
     Node head;
