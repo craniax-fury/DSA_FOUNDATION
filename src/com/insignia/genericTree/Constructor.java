@@ -5,10 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-
-
 public class Constructor {
-
 
     public static void main(String[] args) throws IOException{
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
@@ -38,6 +35,6 @@ public class Constructor {
                 }
             }
         }
-         
-    }
+    } 
+    
 }

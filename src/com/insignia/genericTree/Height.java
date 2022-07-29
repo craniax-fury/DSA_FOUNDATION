@@ -8,8 +8,16 @@ import java.util.Stack;
 
 
 public class Height {
-    public static int Height(Node node){
-        
+    public static int height(TreeNode node){
+        int max_depth=-1;
+        for(TreeNode child:node.children){
+            int depth = height(child);
+            if(max_depth<depth){
+                max_depth=depth;
+            }
+        }
+
+        return max_depth+1;
     }
 
     public static int max(TreeNode node){
@@ -80,6 +88,8 @@ public class Height {
             System.out.println("Size: "+ size(root));
             System.out.println("___________________________");
             System.out.println("Max: "+ max(root));
+            System.out.println("___________________________");
+            System.out.println("Height: "+ height(root));
 
 
         }
