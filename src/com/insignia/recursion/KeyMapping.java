@@ -7,7 +7,8 @@ import java.util.Map;
 
 public class KeyMapping {
 
-        static Map<Integer, String> keyMapping = new HashMap<>(){{
+    static Map<Integer, String> keyMapping = new HashMap<>() {
+        {
             put(0, ".;");
             put(1, "abc");
             put(2, "def");
@@ -33,28 +34,31 @@ public class KeyMapping {
     }
 
     public static ArrayList<String> getKPC(String str) {
-
+        
         if(str.length()==1){
-            ArrayList<String> temp = new ArrayList<>();
-            temp.add(str);
-            return temp;
+            ArrayList<String> tmpOut = new ArrayList<>();
+
+            for(Character character:keyMapping.get(str.charAt(0)-'0').toCharArray()){
+                tmpOut.add(character.toString());
+            }
+
+            return tmpOut;
         }
 
-        Character firstCharacter = str.charAt(0);
+        Character first = str.charAt(0);
 
-        ArrayList<String> tempOut = getKPC(str.substring(1));
+        ArrayList<String> tmpOutput = getKPC(str.substring(1));
 
         ArrayList<String> output = new ArrayList<>();
 
-        ArrayList<String> 
-        for (Character character : keyMapping.get(firstCharacter-'0').toCharArray()){
-            for(String string: tempOut){
-                output.add(character+string);
+        for(Character character: keyMapping.get(first-'0').toCharArray()){
+            
+            for(int index=0;index<tmpOutput.size();index++){
+                output.add(character.toString()+tmpOutput.get(index));
             }
         }
 
         return output;
-            
     }
 
 }
