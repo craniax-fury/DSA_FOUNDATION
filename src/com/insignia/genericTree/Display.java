@@ -10,15 +10,13 @@ import java.util.Stack;
 public class Display {
 
     public static void display(TreeNode node){
-        System.out.print(node.data+" -> ");
-        
-        for(TreeNode child:node.children){
-            System.out.print(child.data+", ");
+        System.out.print(node.data + " -> ");
+        for(TreeNode child: node.children){
+            System.out.print(child.data + ", ");
         }
-        
-        System.out.println(".");
-        
-        for(TreeNode child:node.children){
+        System.out.println(" .");
+
+        for(TreeNode child: node.children){
             display(child);
         }
     }

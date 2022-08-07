@@ -5,19 +5,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-
-
 public class Height {
     public static int height(TreeNode node){
-        int max_depth=-1;
+        int maxHeight = -1;
+
         for(TreeNode child:node.children){
-            int depth = height(child);
-            if(max_depth<depth){
-                max_depth=depth;
+            int tempMaxHeight = height(child);
+            if(tempMaxHeight>maxHeight){
+                maxHeight=tempMaxHeight;
             }
         }
 
-        return max_depth+1;
+        return maxHeight+1;
+
     }
 
     public static int max(TreeNode node){

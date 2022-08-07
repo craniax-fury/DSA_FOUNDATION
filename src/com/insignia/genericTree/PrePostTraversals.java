@@ -5,15 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class Size {
-
-    public static int size(TreeNode node) {
-        int sum = 0;
-        for (TreeNode child : node.children) {
-            sum+=size(child);
-        }
-        return sum+1;
-    }
+public class PrePostTraversals {
 
     public static void display(TreeNode node) {
         System.out.print(node.data + " -> ");
@@ -29,17 +21,27 @@ public class Size {
         }
     }
 
+    public static void traversals(TreeNode node) {
+
+        System.out.println("Node Pre " + node.data);
+
+        for (TreeNode child : node.children) {
+            System.out.println("Edge Pre " + node.data + "--" + child.data);
+            traversals(child);
+            System.out.println("Edge Post " + node.data + "--" + child.data);
+        }
+
+        System.out.println("Node Post " + node.data);
+
+    }
+
     public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            // int input_length = Integer.parseInt(reader.readLine());
-            // int[] input = new int[input_length];
 
-            // for(int input_index=0;input_index<input_length;input_index++){
-            // input[input_index] = Integer.parseInt(reader.readLine());
-            // }
+            // int[] input = new int[] { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40,
+            //         100, -1, -1, -1 };
 
-            int[] input = new int[] { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40,
-                    100, -1, -1, -1 };
+            int[] input = new int[] { 10, 20, -1, 30, 50, -1, 60, -1, -1, 40, -1, -1};
 
             Stack<TreeNode> stack = new Stack<>();
             TreeNode root = new TreeNode();
@@ -59,7 +61,9 @@ public class Size {
             }
 
             display(root);
-            System.out.println(size(root));
+            System.out.println("___________________________");
+            traversals(root);
+
         }
 
     }

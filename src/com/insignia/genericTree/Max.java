@@ -9,16 +9,17 @@ import java.util.Stack;
 
 public class Max {
     public static int max(TreeNode node){
+
         int max=-1;
-        
+
         for(TreeNode child:node.children){
-            int maxOfChild = max(child);
-            if(max<maxOfChild){
-                max=maxOfChild;
+            int tempMax = max(child);
+            if(tempMax>max){
+                max=tempMax;
             }
         }
 
-        return node.data>max?node.data:max;
+        return max>node.data?max:node.data;
     }
 
     public static int size(TreeNode node){
