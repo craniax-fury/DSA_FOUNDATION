@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class AreMirror {
+public class IsSymmetric {
 
     public static void display(TreeNode node) {
         System.out.print(node.data + " -> ");
@@ -23,29 +23,35 @@ public class AreMirror {
 
     public static boolean areMirror(TreeNode n1, TreeNode n2) {
         if (n1.children.size() != n2.children.size()) {
-            return false;
-        }
-
-        int till = 0;
-        if (n1.children.size() % 2 == 0) {
-            till = n1.children.size() / 2;
-        } else {
-            till = n1.children.size() / 2 + 1;
-        }
-
-        for (int n1Index = 0; n1Index < till; n1Index++) {
-            int n2Index = n2.children.size() - 1 - n1Index;
-            if (!areMirror(n1.children.get(n1Index), n2.children.get(n2Index))) {
                 return false;
             }
-        }
+        
+        int till=0;
+            if(n1.children.size()%2==0){
+                till=n1.children.size()/2;
+            }else{
+                till=n1.children.size()/2+1;
+            }
+            
+            for (int n1Index = 0; n1Index < till; n1Index++) {
+                int n2Index = n2.children.size() - 1 - n1Index;
+                if (!areMirror(n1.children.get(n1Index), n2.children.get(n2Index))) {
+                    return false;
+                }
+            }
+    
+            return true;
+      }
 
-        return true;
+    public static boolean isSymmetric(TreeNode node) {
+
+        return areMirror(node, node);
     }
 
     public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            int[] input = new int[] { 10, 20, -1, 30, 50, -1, 60, -1, -1, 40, -1, -1 };
+            int[] input = new int[] { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, -1, 90, -1, -1, 40, 100, -1, 110, -1,
+                    -1, -1 };
 
             int[] input2 = new int[] { 100, 200, -1, 300, 500, -1, 600, -1, -1, 400, -1, -1 };
 
@@ -86,8 +92,8 @@ public class AreMirror {
 
             System.out.println("___________________________");
 
-            boolean similar = areMirror(root1, root2);
-            System.out.println(similar);
+            boolean sym = isSymmetric(root1);
+            System.out.println(sym);
 
         }
 
