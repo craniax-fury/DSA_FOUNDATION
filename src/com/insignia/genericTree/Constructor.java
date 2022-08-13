@@ -9,13 +9,6 @@ public class Constructor {
 
     public static void main(String[] args) throws IOException{
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
-            // int input_length = Integer.parseInt(reader.readLine());
-            // int[] input = new int[input_length];
-
-            // for(int input_index=0;input_index<input_length;input_index++){
-            //     input[input_index] = Integer.parseInt(reader.readLine());
-           // }
-
             int[] input = new int[]{22,10,20,50,-1, 60,-1,30,70,-1,80,110,-1,120,-1,-1,90,-1,40,100,-1,-1,-1};
 
             Stack<TreeNode> stack = new Stack<>();
