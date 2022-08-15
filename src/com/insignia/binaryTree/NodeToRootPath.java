@@ -3,8 +3,6 @@ package com.insignia.binaryTree;
 import java.util.ArrayList;
 import java.util.Stack;
 
-import javax.swing.text.html.HTMLDocument.RunElement;
-
 public class NodeToRootPath {
 
     public static class Pair {
