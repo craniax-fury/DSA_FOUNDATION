@@ -50,33 +50,33 @@ public class IsBinarySearchTree {
         int max;
     }
 
-    public static BSTPair isBST(BinaryNode node) {
-
-        if (node == null) {
-            BSTPair np = new BSTPair();
-            np.isBST = true;
-            np.min = Integer.MAX_VALUE;
-            np.max = Integer.MIN_VALUE;
-            return np;
+    private static BSTPair isBST(BinaryNode node) {
+     
+        if(node==null){
+            BSTPair bPair = new BSTPair();
+            bPair.isBST=true;
+            bPair.min=Integer.MAX_VALUE;
+            bPair.max=Integer.MIN_VALUE;
+            return bPair;
         }
 
-        BSTPair lp = isBST(node.left);
-        BSTPair rp = isBST(node.right);
+        BSTPair lBPair = isBST(node.left);
+        BSTPair rBPair = isBST(node.right);
+            
+        BSTPair mPair = new BSTPair();
 
-        BSTPair mp = new BSTPair();
-
-        if (lp.isBST && rp.isBST && node.data > lp.max && node.data < rp.min) {
-            mp.isBST = true;
-
-        } else {
-            mp.isBST = false;
+        if(!lBPair.isBST || lBPair.max>node.data || !rBPair.isBST || rBPair.min<node.data){
+            mPair.isBST=false;
+        }else{
+            mPair.isBST=true;
         }
-        
-        mp.min = Math.min(node.data,Math.min(lp.min, rp.min));
-        mp.max = Math.max(node.data,Math.max(lp.max, rp.max));
-        
-        return mp;
+       
+        mPair.min = lBPair.min<rBPair.min?lBPair.min:rBPair.min;
+        mPair.max = lBPair.max<rBPair.max?lBPair.max:rBPair.max;
+
+        return mPair;
     }
+    
 
     public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
