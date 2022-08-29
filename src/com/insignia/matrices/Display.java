@@ -28,7 +28,6 @@ public class Display {
         }
       }
 
-      display(matrix)
+      display(matrix);
   }
-
 }
