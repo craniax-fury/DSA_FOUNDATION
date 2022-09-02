@@ -1,4 +1,4 @@
-package com.insignia.matrices.Strings;
+package com.insignia.Strings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
