@@ -38,6 +38,6 @@ public class MinCostInMazeTraversal {
             
 
             System.out.println(minCostMatrix[0][0]);
-        }54515
+        }
     }
 }
