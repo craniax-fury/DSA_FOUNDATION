@@ -41,6 +41,8 @@ public class TargetSumSubsets {
                     }
                 }
             }
+            System.out.println(false);
+
         }
     }
 }

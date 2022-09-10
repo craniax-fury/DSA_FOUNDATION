@@ -18,32 +18,20 @@ public class CoinChangeCombination {
             
             int targetSum = Integer.parseInt(reader.readLine());
 
-            boolean[][] sumMatrix = new boolean[n][targetSum+1];
+            int[] sum = new int[targetSum+1];
+            sum[0]=1;
 
             for(int i=0;i<n;i++){
-                sumMatrix[i][0] = true;
-            }
-
-            int combinations = 0;
-
-            for(int row=0;row<n;row++){
-                for(int col=1;col<targetSum+1;col++){
-                    
-                    if(col%den[row]==0){
-                        sumMatrix[row][col]  = true;
-                    }else if(row-1>=0 && col-den[row]>=0 && sumMatrix[row-1][col-den[row]]==true){
-                        sumMatrix[row][col]  = true;
-                    
-                    }else if(row-1>=0 && sumMatrix[row-1][col]==true && col!=targetSum){
-                        sumMatrix[row][col]  = true;
-                    }
-                    
-                    if(sumMatrix[row][targetSum]==true){
-                        combinations+=1;
+                for(int j=den[i];j<targetSum+1;j++){
+                    if(j==den[i]){
+                        sum[j]+=1;
+                    }else if(j-den[i]>=0 && sum[j-den[i]]>=1){
+                        sum[j] += sum[j-den[i]];
                     }
                 }
             }
-            System.out.println(combinations);
+
+            System.out.println(sum[targetSum]);
 
         }
     }
