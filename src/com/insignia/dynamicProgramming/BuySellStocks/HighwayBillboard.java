@@ -1,5 +1,12 @@
 package com.insignia.dynamicProgramming.BuySellStocks;
-
+/**
+input : 
+20
+5
+6 7 8 12 14 15
+5 8 5 3 1
+5
+*/
 import java.util.Scanner;
 
 public class HighwayBillboard {
