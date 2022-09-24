@@ -1,4 +1,4 @@
-package com.insignia.dynamicProgramming;
+package com.insignia.dynamicProgramming.BuySellStocks;
 
 import java.util.Scanner;
 
@@ -39,6 +39,6 @@ public class BNSStockWithCooldownAndInfTxn {
 
         }
 
-        System.out.println(bscProfit[n-1]);
+        System.out.println(bscProfit[n-1]>bsbsProfit[n-1]?bscProfit[n-1]:bsbsProfit[n-1]);
     }
 }

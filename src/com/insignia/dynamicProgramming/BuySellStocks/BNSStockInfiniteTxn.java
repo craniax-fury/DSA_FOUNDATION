@@ -1,4 +1,4 @@
-package com.insignia.dynamicProgramming;
+package com.insignia.dynamicProgramming.BuySellStocks;
 
 import java.util.Scanner;
 
