@@ -2,7 +2,7 @@ package com.insignia.recursionPractise;
 
 import java.io.*;
 
-public class decreasing {
+public class Decreasing {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

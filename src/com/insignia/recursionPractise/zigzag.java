@@ -2,7 +2,7 @@ package com.insignia.recursionPractise;
 
 import java.io.*;
 
-public class zigzag {
+public class Zigzag {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

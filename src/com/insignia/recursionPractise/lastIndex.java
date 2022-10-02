@@ -2,7 +2,7 @@ package com.insignia.recursionPractise;
 
 import java.io.*;
 
-public class lastIndex {
+public class LastIndex {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
