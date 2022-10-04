@@ -3,7 +3,7 @@ package com.insignia.recursionPractise;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class LastIndex {
+public class AllIndex {
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,11 +15,11 @@ public class LastIndex {
         }
 
         int find = Integer.parseInt(br.readLine());
-        lastIndex(arr,n-1,find);
+        allIndex(arr,n-1,find);
 
     }
 
-    private static void lastIndex(int[] arr,int n,int find) {
+    private static void allIndex(int[] arr,int n,int find) {
         if(n<0){
             System.out.println("");
             return;
@@ -27,10 +27,9 @@ public class LastIndex {
         
         if(arr[n]==find){
             System.out.println(n);
-            return;
         }
 
-        lastIndex(arr, n-1,find);
+        allIndex(arr, n-1,find);
 
     }
 }
