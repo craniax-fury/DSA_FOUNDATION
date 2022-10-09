@@ -24,18 +24,20 @@ public class TargetSum {
 
     public static void targetSumSubs(int[] input,int idx,int target,int ssf,String out) {
 
+        if (idx==input.length) {
         if (ssf==target) {
             System.out.println(out+".");
-            return;
+        }
+        return;
         }
 
-        if (ssf>target || idx>input.length-1) {
-            return;
-        }
+        // if (ssf>target || idx>input.length-1) {
+        //     return;
+        // }
 
         
 
-        targetSumSubs(input, idx+1, target,ssf+input[idx],out+input[idx]+",");
+        targetSumSubs(input, idx+1, target,ssf+input[idx],out+input[idx]+", ");
         targetSumSubs(input, idx+1, target,ssf,out);
         
     }
