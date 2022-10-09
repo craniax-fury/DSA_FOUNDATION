@@ -1,6 +1,8 @@
 package com.insignia.recursion.recursionBacktracking;
 
-import java.io.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class TargetSumSubset {
@@ -13,6 +15,7 @@ public class TargetSumSubset {
             for (int i = 0; i < n; i++) {
                 arr[i] = scn.nextInt();
             }
+            List<String> output;
 
             int tar = scn.nextInt();
 
@@ -22,7 +25,7 @@ public class TargetSumSubset {
     }
 
     public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
-
+        List<List<String>> output = new ArrayList<>();
         if (sos > tar) {
             return;
         }
