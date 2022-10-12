@@ -23,16 +23,15 @@ public class KnightTour {
 
         if (r >= chess.length || r < 0 || c >= chess[0].length || c < 0 || chess[r][c] != 0) {
             return;
-        } else {
-            chess[r][c] = upcomingMove;
-        }
+        } 
+
 
         if (upcomingMove == chess.length * chess.length) {
-            chess[r][c]=upcomingMove;
             displayBoard(chess);
-            chess[r][c]=0;
+            //chess[r][c]=0;
             return;
         }
+        chess[r][c] = upcomingMove;
 
         printKnightsTour(chess, r - 2, c + 1, upcomingMove + 1);
         printKnightsTour(chess, r - 1, c + 2, upcomingMove + 1);
