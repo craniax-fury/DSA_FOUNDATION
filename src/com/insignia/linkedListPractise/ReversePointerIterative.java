@@ -183,15 +183,15 @@ public class ReversePointerIterative {
         }
      
         public void reversePI(){
-            Node prev = null;
-            Node curr = this.head;
-            
+            if(head==null || head.next==null){return;} // handle for 0 and 1 length cases
+            Node prev=null;
+            Node curr = head;
+
             while(curr!=null){
                 Node temp = curr.next;
                 curr.next = prev;
                 prev = curr;
-                curr = temp;
-                 
+                curr=temp;
             }
         }
       }

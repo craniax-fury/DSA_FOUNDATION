@@ -8,7 +8,7 @@ public class Mid {
     int data;
     Node next;
   }
-  
+
   public static class LinkedList {
     Node head;
     Node tail;
@@ -168,7 +168,7 @@ public class Mid {
     public void reverseDI() {
       int li = 0;
       int ri = size - 1;
-      while(li < ri){
+      while (li < ri) {
         Node left = getNodeAt(li);
         Node right = getNodeAt(ri);
 
@@ -180,17 +180,17 @@ public class Mid {
         ri--;
       }
     }
- 
-    public void reversePI(){
-      if(size <= 1){
+
+    public void reversePI() {
+      if (size <= 1) {
         return;
       }
 
       Node prev = null;
       Node curr = head;
-      while(curr != null){
+      while (curr != null) {
         Node next = curr.next;
-        
+
         curr.next = prev;
         prev = curr;
         curr = next;
@@ -200,35 +200,44 @@ public class Mid {
       head = tail;
       tail = temp;
     }
-  
-    public int kthFromLast(int k){
+
+    public int kthFromLast(int k) {
       Node prev = this.head;
       Node curr = this.head;
 
-      for(int i=0;i<k;i++){
-        curr=curr.next;
+      for (int i = 0; i < k; i++) {
+        curr = curr.next;
       }
 
-      while(curr!=this.tail){
-        prev=prev.next;
-        curr=curr.next;
+      while (curr != this.tail) {
+        prev = prev.next;
+        curr = curr.next;
       }
 
       return prev.data;
     }
 
-    public int mid(){
-      Node prev= head;
-      Node curr = head;
-      
-      for(int i=1;curr.next!=null;i++){
-        prev = prev.next;
-        for(int j=i;j<=i*2 && curr.next!=null;j++){
-          curr=curr.next;
-        }
+    public int mid() {
+
+      if (head == null) {
+        return 0;
       }
 
-     return prev.data;
+      if (head.next == null) {
+        return head.data;
+      }
+
+      Node prev = head;
+      Node curr = head;
+
+      while (curr.next != null && curr.next.next != null) {
+
+        prev = prev.next;
+        curr = curr.next.next;
+
+      }
+
+      return prev.data;
     }
   }
 
@@ -275,18 +284,17 @@ public class Mid {
       } else if (str.startsWith("removeAt")) {
         int idx = Integer.parseInt(str.split(" ")[1]);
         list.removeAt(idx);
-      } else if(str.startsWith("reverseDI")){
+      } else if (str.startsWith("reverseDI")) {
         list.reverseDI();
-      } else if(str.startsWith("reversePI")){
+      } else if (str.startsWith("reversePI")) {
         list.reversePI();
-      } else if(str.startsWith("kthFromEnd")){
+      } else if (str.startsWith("kthFromEnd")) {
         int idx = Integer.parseInt(str.split(" ")[1]);
         System.out.println(list.kthFromLast(idx));
-      }else if (str.startsWith("mid")) {
+      } else if (str.startsWith("mid")) {
         System.out.println(list.mid());
       }
       str = br.readLine();
     }
   }
 }
-
