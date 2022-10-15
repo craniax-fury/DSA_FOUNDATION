@@ -1,4 +1,4 @@
-package com.insignia.linkedListPractise;
+package com.insignia.linkedListLevel2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -197,19 +197,24 @@ public class palindromeLL {
       }
     }
 
-    public boolean palindrome() {
-      Node mid = mid();
-      Node reversedHead = reversePI(mid);
+    public boolean palindrome() { // O(n)
+      Node mid = mid(); // O(n)
+      Node temp = mid.next;
+      mid.next=null;
+      Node reversedHead = reversePI(temp); // O(n)
 
       if(reversedHead==null || reversedHead.next==null){ // handle for 0 and 1 length
+        revertReversedList(reversedHead,mid); // O(n/2)
         return true;
       }
 
       Node startHead = head;
       Node endHead = reversedHead;
 
-      while(endHead!=null){
+      while(endHead!=null){  // O(n/2) // in even length both are null while in odd case endhead becomes null before start head
         if(startHead.data != endHead.data){
+          revertReversedList(reversedHead,mid); // O(n/2)
+
           return false;
         }
 
@@ -217,11 +222,17 @@ public class palindromeLL {
         endHead = endHead.next;
       }
 
+      revertReversedList(reversedHead,mid); // O(n/2)
       return true;
 
     }
 
-    public Node reversePI(Node head) {
+    private void revertReversedList(Node reversedHead,Node mid) { // O(n/2)
+      reversedHead = reversePI(reversedHead);
+      mid.next=reversedHead;
+    }
+
+    public Node reversePI(Node head) { // O(n) as we are travelling every node
       if (head == null || head.next == null) {
         return head;
       } // handle for 0 and 1 length cases
@@ -238,7 +249,7 @@ public class palindromeLL {
       return prev;
     }
 
-    public Node mid() {
+    public Node mid() { // O(n) as we are travelling every node
       if (head == null || head.next == null) { // handle for 0 and 1 length case
         return head;
       }
@@ -247,10 +258,8 @@ public class palindromeLL {
       Node fast = head;
 
       while (fast.next != null && fast.next.next != null) { // handle for odd even case
-        Node temp = fast.next;
-        fast.next = slow;
-        slow = fast;
-        fast = temp;
+        slow=slow.next;
+        fast=fast.next.next;
       }
 
       return slow;
@@ -300,8 +309,8 @@ public class palindromeLL {
       } else if (str.startsWith("removeAt")) {
         int idx = Integer.parseInt(str.split(" ")[1]);
         list.removeAt(idx);
-      } else if (str.startsWith("reverseDI")) {
-        list.reverseDI();
+      } else if (str.startsWith("palindrome")) {
+        System.out.println(list.palindrome());
       } else if (str.startsWith("reversePI")) {
         list.reversePI();
       }

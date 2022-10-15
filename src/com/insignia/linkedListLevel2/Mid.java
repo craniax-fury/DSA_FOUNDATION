@@ -1,4 +1,4 @@
-package com.insignia.linkedListPractise;
+package com.insignia.linkedListLevel2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
