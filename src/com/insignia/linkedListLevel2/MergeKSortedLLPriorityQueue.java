@@ -2,8 +2,9 @@ package com.insignia.linkedListLevel2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.PriorityQueue;
 
-public class MergeSortedLL {
+public class MergeKSortedLLPriorityQueue {
 
   public static class Node {
     public Node(int data) {
@@ -324,7 +325,7 @@ public class MergeSortedLL {
       Node dummy = new Node(-1);
       Node prev = dummy;
 
-      while (c1 != null && c2 != null) { //O(n+m)
+      while (c1 != null && c2 != null) { // O(n+m)
         if (c2.data < c1.data) {
           prev.next = c2;
           prev = c2;
@@ -345,22 +346,132 @@ public class MergeSortedLL {
 
       return dummy.next;
     }
+
+    public Node mergeListPQ(Node[] nodes) { //O(KN logk)
+      PriorityQueue<Node> pq = new PriorityQueue<>((a, b) -> a.data - b.data);
+
+      for (Node node : nodes) {
+        if (node != null) {
+          pq.add(node);
+        }
+      }
+
+      Node dummy = new Node(-1);
+      Node prev = dummy;
+
+      while (pq.size() != 0) {
+        Node minAvail = pq.remove();
+        prev.next = minAvail;
+        prev = minAvail;
+        if (minAvail.next!=null) {
+          pq.add(minAvail.next);
+        }
+      }
+
+      return dummy.next;
+    }
+
+    public Node merge2List(Node head1, Node head2) { // O(n+m)
+      if (head1 == null) {
+        return head2;
+      }
+
+      if (head2 == null) {
+        return head1;
+      }
+
+      Node lhead1 = head1;
+      Node lhead2 = head2;
+
+      Node dummy = new Node(-1);
+      Node prev = dummy;
+      Node c1 = head1;
+      Node c2 = head2;
+
+      while (c1 != null && c2 != null) {
+        if (c1.data < c2.data) {
+          prev.next = c1;
+          prev = c1;
+          c1 = c1.next;
+
+        } else {
+          prev.next = c2;
+          prev = c2;
+          c2 = c2.next;
+        }
+      }
+
+      if (c1 == null) {
+        prev.next = c2;
+      } else {
+        prev.next = c1;
+      }
+
+      return dummy.next;
+    }
+
+    public Node mergeList(Node[] nodes, int si, int ei) {
+      if (si > ei) {
+        return null;
+      }
+
+      if (si == ei) {
+        return nodes[si];
+      }
+
+      int mid = (si + ei) / 2;
+
+      Node head1 = mergeList(nodes, si, mid);
+      Node head2 = mergeList(nodes, mid + 1, ei);
+
+      return merge2List(head1, head2);
+
+    }
+
+    public Node mergeKLists(Node[] nodes) { // O(nk log(k))
+      if (nodes == null || nodes.length == 0) {
+        return null;
+      }
+
+      return mergeList(nodes, 0, nodes.length - 1);
+    }
   }
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     LinkedList list = new LinkedList();
+    LinkedList list1 = new LinkedList();
     LinkedList list2 = new LinkedList();
+    LinkedList list3 = new LinkedList();
+
+    list1.addLast(0);
+    list1.addLast(0);
+    list1.addLast(0);
+
+    list2.addLast(0);
+    list2.addLast(0);
+    list2.addLast(1);
+    list2.addLast(1);
+    list2.addLast(1);
+    list2.addLast(2);
+    list2.addLast(2);
+    list2.addLast(4);
+
+    list3.addLast(0);
+    list3.addLast(0);
+    list3.addLast(0);
+    list3.addLast(0);
+    list3.addLast(5);
+    list3.addLast(5);
+    list3.addLast(6);
+
+    Node[] nodes = { list1.head, list2.head, list3.head };
 
     String str = br.readLine();
     while (str.equals("quit") == false) {
       if (str.startsWith("addLast")) {
         int val = Integer.parseInt(str.split(" ")[1]);
         list.addLast(val);
-      }
-      if (str.startsWith("2addLast")) {
-        int val = Integer.parseInt(str.split(" ")[1]);
-        list2.addLast(val);
       } else if (str.startsWith("fold")) {
         list.fold();
         list.printList(list.head);
@@ -370,7 +481,14 @@ public class MergeSortedLL {
       } else if (str.startsWith("merge")) {
         Node head = list.mergeSortedLinkedLists(list.head, list2.head);
         list.printList(head);
+      } else if (str.startsWith("Kmerge")) {
+        Node head = list.mergeKLists(nodes);
+        list.printList(head);
+      }else if (str.startsWith("PKmerge")) {
+        Node head = list.mergeListPQ(nodes);
+        list.printList(head);
       }
+      
       str = br.readLine();
 
     }
