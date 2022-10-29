@@ -346,7 +346,7 @@ public class MergeKSortedLL {
       return dummy.next;
     }
 
-    public Node merge2List(Node head1, Node head2) { //O(n+m)
+    public static Node merge2List(Node head1, Node head2) { //O(n+m)
       if (head1 == null) {
         return head2;
       }
@@ -385,7 +385,7 @@ public class MergeKSortedLL {
       return dummy.next;
     }
 
-    public Node mergeList(Node[] nodes, int si, int ei) {
+    public static Node mergeList(Node[] nodes, int si, int ei) {
       if (si > ei) {
         return null;
       }
@@ -403,7 +403,7 @@ public class MergeKSortedLL {
 
     }
 
-    public Node mergeKLists(Node[] nodes) { // O(nk log(k))
+    public static Node mergeKLists(Node[] nodes) { // O(nk log(k))
       if (nodes == null || nodes.length==0 ) {
         return null;
       }
