@@ -33,9 +33,8 @@ public class CoinChange {
   }
   // MEMOIZATION
 
-  public int changeM(int amount, int[] coins) {
+  public static int changeM(int amount, int[] coins,int[][] dp) {
 
-    int[][] dp = new int[coins.length][amount + 1];
     for (int i = 0; i < coins.length; i++) {
       Arrays.fill(dp[i], -1);
     }
@@ -43,7 +42,7 @@ public class CoinChange {
     return helperM(coins, amount, coins.length - 1, dp);
   }
 
-  private int helperM(int[] coins, int amount, int i, int[][] dp) {
+  private static int helperM(int[] coins, int amount, int i, int[][] dp) {
     if (amount == 0)
       return 1;
 
@@ -167,9 +166,15 @@ public class CoinChange {
       }
 
       int target = Integer.parseInt(reader.readLine());
-      int[] dp = new int[target + 1];
-      dp[0]=1;
-      System.out.println(coinChangePermsTabu(den, target, 0, "", dp));
+      int[] dp1 = new int[target + 1];
+      //dp[0]=1;
+      int[][] dp = new int[den.length][target + 1];
+
+      System.out.println(changeM(target,den,dp));
+
+      display2d(dp);
+      
+     // System.out.println(coinChangePermsTabu(den, target, 0, "", dp));
       // display1d(dp);
     }
   }

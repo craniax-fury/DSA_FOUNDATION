@@ -9,55 +9,107 @@ public class CoinChangeCombo {
   private static int coinChangeComb(int[] den, int target, int ssf, String psf, int index) {
     int ans = 0;
 
-    if (ssf == target) {
-      return 1;
-    }
-
     if (index > den.length - 1) {
       return 0;
     }
 
-    while(index<den.length){
+    if (ssf == target) {
+      return 1;
+    }
+
+    while (index != den.length - 1) {
       if (ssf + den[index] <= target) {
         ans += coinChangeComb(den, target, ssf + den[index], psf + den[index], index);
-      } 
+      }
 
-      index++;  
-
+      index++;
     }
-    
-    return ans;
 
+    if (ssf < target && (target - ssf) % den[index] == 0) {
+      ans += 1;
+    }
+
+    return ans;
   }
 
-  private static int coinChangeCombMemo(int[] den, int target, int ssf, String psf, int index,int[][] dp) {
+  private static int coinChangeCombMemo(int[] den, int target, int ssf, String psf, int index, int[][] dp) {
 
-    if (ssf == target) {
-      dp[index][target]=1;
-      return 1;
+    if (index > den.length - 1) {
+      return 0;
     }
 
     if (dp[index][ssf] != 0) {
       return dp[index][ssf];
     }
-    
-    if (index > den.length - 1) {
-      return 0;
+
+    if (ssf == target) {
+      dp[index][ssf] = 1;
+      return 1;
     }
 
-    while(index<den.length){
-      if (ssf + den[index] <= target) {
-        dp[index][ssf]+= coinChangeCombMemo(den, target, ssf + den[index], psf + den[index], index,dp);
-      } 
+    int i = index;
 
-      index++;  
+    while (i != den.length - 1) {
+      if (ssf + den[i] <= target) {
+        int ans = 0;
+
+        ans = coinChangeCombMemo(den, target, ssf + den[i], psf + den[i], i, dp);
+
+        dp[index][ssf] += ans;
+
+      }
+
+      i++;
 
     }
-    
-    return dp[index-1][ssf];
+
+    if (ssf != target && (target - ssf) % den[i] == 0) {
+      dp[index][ssf] += 1;
+    }
+
+    return dp[index][ssf];
 
   }
 
+  // private static int coinChangeCombMemo(int[] den, int target, int ssf, String psf, int index, int[][] dp) {
+
+  //   if (index > den.length - 1) {
+  //     return 0;
+  //   }
+
+  //   if (dp[index][ssf] != 0) {
+  //     return dp[index][ssf];
+  //   }
+
+  //   if (ssf == target) {
+  //     dp[index][ssf] = 1;
+  //     return 1;
+  //   }
+
+  //   int i = index;
+    
+  //   while (i != den.length - 1) {
+  //     if (ssf + den[i] <= target) {
+  //       int ans = 0;
+
+  //       ans = coinChangeCombMemo(den, target, ssf + den[i], psf + den[i], i, dp);
+
+  //       dp[index][ssf] += ans;
+
+  //     }
+
+  //     i++;
+
+  //   }
+
+  //   if (ssf != target && (target - ssf) % den[i] == 0) {
+  //     dp[index][ssf] += 1;
+  //   }
+
+  //   return dp[index][ssf];
+
+  // }
+  
   public static void main(String[] args) throws IOException {
 
     try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
@@ -70,9 +122,10 @@ public class CoinChangeCombo {
 
       int target = Integer.parseInt(reader.readLine());
       int[][] dp = new int[den.length][target + 1];
-      //dp[0] = 1;
-      System.out.println(coinChangeCombMemo(den, target, 0, "", 0,dp));
-      // display1d(dp);
+      // dp[0] = 1;
+      System.out.println(coinChangeComb(den, target, 0, "", 0));
+      System.out.println(coinChangeCombMemo(den, target, 0, "", 0, dp));
+      display2d(dp);
     }
   }
 
