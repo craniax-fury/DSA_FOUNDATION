@@ -4,17 +4,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ZeroOneKnapsack {
+public class UnboundedKnapsack {
 
-  private static int knapSack01(int[] wt, int[] val, int index, int cap) {
+  private static int unboundSack(int[] wt, int[] val, int index, int capacity) {
 
-    if (cap < 0) {
+    if (capacity < 0) {
       return 0;
     }
 
     if (index == 0) {
-      if (wt[index] == cap) {
-        return val[index];
+      if (capacity == wt[0]) {
+        return val[0];
       } else {
         return 0;
       }
@@ -23,80 +23,77 @@ public class ZeroOneKnapsack {
     int pickValue = 0;
     int notPickValue = 0;
 
-    if (wt[index] <= cap) {
-      pickValue = val[index] + knapSack01(wt, val, index - 1, cap - wt[index]);
+    if (wt[index] <= capacity) {
+      pickValue = val[index] + unboundSack(wt, val, index, capacity - wt[index]);
     }
 
-    notPickValue = knapSack01(wt, val, index - 1, cap);
+    notPickValue = unboundSack(wt, val, index - 1, capacity);
 
     return pickValue > notPickValue ? pickValue : notPickValue;
   }
 
-  private static int knapSack01Memo(int[] wt, int[] val, int index, int cap, int[][] dp) {
+  private static int unboundSackMemo(int[] wt, int[] val, int index, int capacity, int[][] dp) {
 
-    if (cap < 0) {
+    if (capacity < 0) {
       return 0;
     }
 
     if (index == 0) {
-      if (wt[index] == cap) {
-        return val[index];
+      if (capacity == wt[0]) {
+        dp[index][capacity] = val[0];
+        return dp[index][capacity];
       } else {
         return 0;
       }
     }
 
-    if (dp[index][cap] != 0) {
-      return dp[index][cap];
+    if (dp[index][capacity] != 0) {
+      return dp[index][capacity];
     }
 
     int pickValue = 0;
     int notPickValue = 0;
 
-    if (wt[index] <= cap) {
-      pickValue = val[index] + knapSack01Memo(wt, val, index - 1, cap - wt[index], dp);
+    if (wt[index] <= capacity) {
+      pickValue = val[index] + unboundSackMemo(wt, val, index, capacity - wt[index], dp);
     }
 
-    notPickValue = knapSack01Memo(wt, val, index - 1, cap, dp);
+    notPickValue = unboundSackMemo(wt, val, index - 1, capacity, dp);
 
-    dp[index][cap] = pickValue > notPickValue ? pickValue : notPickValue;
-
-    return dp[index][cap];
+    dp[index][capacity] = pickValue > notPickValue ? pickValue : notPickValue;
+    return dp[index][capacity];
   }
 
-  private static int knapSack01Tabu(int[] wt, int[] val, int cap, int[][] dp) {
+  private static int unboundSackTabu(int[] wt, int[] val, int capacity, int[][] dp) {
 
-    if (cap < 0) {
+    if (capacity < 0) {
       return 0;
     }
 
-    for (int index = 0; index <= cap; index++) {
-      if (wt[0] == index) {
+    for (int index = 0; index <= capacity; index++) {
+      if (index == wt[0]) {
         dp[0][index] = val[0];
       } else {
         dp[0][index] = 0;
       }
     }
 
-    for (int index = 1; index <=wt.length-1; index++) {
-      for (int capacity = 0; capacity <= cap; capacity++) {
-
+    for (int index = 1; index <= wt.length - 1; index++) {
+      for (int cap = 0; cap <= capacity; cap++) {
         int pickValue = 0;
         int notPickValue = 0;
 
-        if (wt[index] <= capacity) {
-          pickValue = val[index] + dp[index - 1][capacity - wt[index]];
+        if (wt[index] <= cap) {
+          pickValue = val[index] + dp[index][cap - wt[index]];
         }
 
-        notPickValue = dp[index - 1][capacity];
+        notPickValue = dp[index - 1][cap];
 
-        dp[index][capacity] = pickValue > notPickValue ? pickValue : notPickValue;
-
+        dp[index][cap] = pickValue > notPickValue ? pickValue : notPickValue;
       }
     }
 
-    return dp[wt.length - 1][cap];
-
+    return dp[wt.length-1][capacity];
   }
 
   public static void main(String[] args) throws IOException {
@@ -124,7 +121,7 @@ public class ZeroOneKnapsack {
       int[][] dp = new int[n][cap + 1];
       // System.out.println(knapSack01Memo(wt, val, n - 1, cap,dp));
 
-      System.out.println(knapSack01Tabu(wt, val, cap, dp));
+      System.out.println(unboundSackTabu(wt, val, cap, dp));
       display2d(dp);
     }
   }

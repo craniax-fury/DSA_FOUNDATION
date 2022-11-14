@@ -13,15 +13,15 @@ public class KnapsackFractional {
             String[] valueLine = reader.readLine().split(" ");
             String[] wtLine = reader.readLine().split(" ");
 
-            int[] values = new int[n]; // item values
-            int[] wt = new int[n]; // item weights
+            double[] values = new double[n]; // item values
+            double[] wt = new double[n]; // item weights
 
             for (int i = 0; i < n; i++) {
-                values[i] = Integer.parseInt(valueLine[i]);
+                values[i] = Double.parseDouble(valueLine[i]);
             }
 
             for (int i = 0; i < n; i++) {
-                wt[i] = Integer.parseInt(wtLine[i]);
+                wt[i] = Double.parseDouble(wtLine[i]);
             }
 
             int cap = Integer.parseInt(reader.readLine()); // bag capacity
@@ -32,16 +32,16 @@ public class KnapsackFractional {
                 for (int j = 1; j < cap + 1; j++) {
 
                     if (j <= wt[i]) {
-                        if (i - 1 >= 0 && maxValue[i - 1][j] > values[i] / (wt[i] - j + 1)) {
+                        if (i - 1 >= 0 && maxValue[i - 1][j] > values[i] / (double)(wt[i] - j + 1)) {
                             maxValue[i][j] = maxValue[i - 1][j];
                         } else {
                             maxValue[i][j] = values[i] / (double) (wt[i] - j + 1);
                         }
                     } else {
-                        if (i - 1 >= 0 && maxValue[i - 1][j - wt[i]] + values[i] < maxValue[i - 1][j]) {
+                        if (i - 1 >= 0 && maxValue[i - 1][j - (int) wt[i]] + values[i] < maxValue[i - 1][j]) {
                             maxValue[i][j] = maxValue[i - 1][j];
                         } else {
-                            maxValue[i][j] = maxValue[i - 1][j - wt[i]] + values[i];
+                            maxValue[i][j] = maxValue[i - 1][j - (int) wt[i]] + values[i];
                         }
                     }
 
