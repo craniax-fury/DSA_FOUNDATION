@@ -3,124 +3,80 @@ package com.insignia.dynamicProgrammingRecursive;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class MaxSumNonAdj {
 
-  private static int maxSumNonAdj(int[] input, int ssf, int index, int islSelected) {
+  private static int maxSumNonAdj(int[] input, int index) {
 
-    if (input.length == 0) {
+    if (input.length == 0 || index < 0) {
       return 0;
     }
 
-    if (input.length == 1) {
+    if (input.length == 1 || index == input.length - 1) {
       return input[0];
     }
 
-    if (index == input.length - 1) {
-      if (islSelected == 1) {
-        return ssf;
+    int incl = 0;
 
-      } else {
-        return ssf + input[index];
-      }
+    if (input[index] >= 0) {
+      incl = maxSumNonAdj(input, index - 2) + input[index];
     }
 
-    if (islSelected == 1) {
-      int s_out = maxSumNonAdj(input, ssf, index + 1, 0);
-      if (s_out > ssf) {
-        ssf = s_out;
-      }
-    } else {
-      int s_out = maxSumNonAdj(input, ssf + input[index], index + 1, 1);
-      int ns_out = maxSumNonAdj(input, ssf, index + 1, 0);
+    int excl = maxSumNonAdj(input, index - 1);
 
-      if (s_out > ns_out && s_out > ssf) {
-        ssf = s_out;
-      } else if (ns_out > s_out && ns_out > ssf) {
-        ssf = ns_out;
-      }
-    }
-
-    return ssf;
-
+    return Math.max(incl, excl);
   }
 
-  private static int maxSumNonAdjMemo(int[] input, int ssf, int index, int islSelected, int[][] dp) {
+  private static int maxSumNonAdjMemo(int[] input, int index, int[] dp) {
 
-    if (input.length == 0) {
+    if (input.length == 0 || index < 0) {
       return 0;
     }
 
-    if (input.length == 1) {
+    if (input.length == 1 || index == 0) {
       return input[0];
     }
 
-    if (index == input.length - 1) {
-      if (islSelected == 1) {
-        dp[0][index] = ssf;
-        return ssf;
-
-      } else {
-        dp[1][index] = ssf + input[index];
-        return ssf + input[index];
-      }
+    if (dp[index] != -1) {
+      return dp[index];
     }
 
-    if (islSelected == 1) {
-      int s_out = maxSumNonAdj(input, ssf, index + 1, 0);
-      if (s_out > ssf) {
-        ssf = s_out;
-        dp[0][index] = ssf;
-      }
-    } else {
-      int s_out = maxSumNonAdjMemo(input, ssf + input[index], index + 1, 1, dp);
-      int ns_out = maxSumNonAdjMemo(input, ssf, index + 1, 0, dp);
+    int incl = 0;
 
-      if (s_out > ns_out && s_out > ssf) {
-        ssf = s_out;
-        dp[0][index] = ssf;
-      } else if (ns_out > s_out && ns_out > ssf) {
-        ssf = ns_out;
-        dp[1][index] = ssf;
-      }
+    if (input[index] >= 0) {
+      incl = maxSumNonAdjMemo(input, index - 2, dp) + input[index];
     }
 
-    return ssf;
+    int excl = maxSumNonAdjMemo(input, index - 1, dp);
 
+    dp[index] = Math.max(incl, excl);
+    return dp[index];
   }
 
-  private static int maxSumNonAdjTabu(int[] input, int[][] dp) {
+  private static int maxSumNonAdjTabu(int[] input, int[] dp) {
 
-    if (input.length == 0) {
-      return 0;
+    if (input[0] > 0) {
+      dp[0] = input[0];
+
+    } else {
+      dp[0] = 0;
     }
 
-    if (input.length == 1) {
-      return input[0];
-    }
+    dp[1] = Math.max(dp[0], input[1]);
+    int incl = 0;
 
-    if(input[0]>0){
-      dp[0][0] = input[0];
-    }
-    
-
-    for (int j = 1; j < dp[0].length; j++) {
-      if (input[j] >= 0 && dp[0][j] < dp[1][j - 1] + input[j]) {
-        dp[0][j] = dp[1][j - 1] + input[j];
-      } else if (input[j] <= 0 && dp[0][j] < dp[1][j - 1]) {
-        dp[0][j] = dp[1][j - 1];
+    for (int i = 2; i < input.length; i++) {
+      if (input[i] >= 0) {
+        incl = dp[i - 2] + input[i];
       }
 
-      if(dp[0][j-1]>dp[1][j-1]){
-        dp[1][j] = dp[0][j - 1];
-      }else{
-        dp[1][j] = dp[1][j-1];
-      }
+      int excl = dp[i - 1];
 
+      dp[i] = Math.max(incl, excl);
     }
 
-    return dp[0][dp[0].length - 1] > dp[1][dp[0].length - 1] ? dp[0][dp[0].length - 1] : dp[1][dp[0].length - 1];
-
+    return dp[input.length - 1];
   }
 
   public static void main(String[] args) throws IOException {
@@ -134,12 +90,13 @@ public class MaxSumNonAdj {
 
       }
 
-      int[][] dp = new int[2][input.length];
-      System.out.println(maxSumNonAdj(input, 0, 0, 0));
-      //System.out.println(maxSumNonAdjMemo(input,0,0,0,dp));
-      //display2d(dp);
+      int[] dp = new int[input.length];
+      Arrays.fill(dp, -1);
+
+      // System.out.println(maxSumNonAdj(input, n - 1));
+      // System.out.println(maxSumNonAdjMemo(input, n - 1, dp));
       System.out.println(maxSumNonAdjTabu(input, dp));
-      display2d(dp);
+      display1d(dp);
     }
   }
 
