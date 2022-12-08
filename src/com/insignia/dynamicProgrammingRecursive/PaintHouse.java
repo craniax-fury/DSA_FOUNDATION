@@ -11,10 +11,9 @@ public class PaintHouse {
     if (house < 0) {
       return 0;
     }
-
-    int red = 0;
-    int green = 0;
-    int blue = 0;
+    int red=0;
+    int green=0;
+    int blue=0;
 
     if (index == 0) {
       int rg = paintHouse(input, 1, house - 1) + input[house][1];
@@ -78,9 +77,9 @@ public class PaintHouse {
   private static int paintHouseTabu(int[][] input, int index, int house,int[][] dp) {
 
 
-    dp[0][0] = input[0][0];
-    dp[0][1] = input[0][1];
-    dp[0][2] = input[0][2];
+    for (int j = 0; j < input[0].length; j++) {
+      dp[0][j] = input[0][j];
+    }
 
     for (int i = 1; i < house; i++) {
       for (int j = 0; j < input[0].length; j++) {
@@ -110,19 +109,21 @@ public class PaintHouse {
   public static void main(String[] args) throws IOException {
 
     try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-      int n = Integer.parseInt(reader.readLine());
-      int[][] input = new int[n][3];
+      String[] s1 = reader.readLine().split(" ");
+      int n = Integer.parseInt(s1[0]);
+      int colors = Integer.parseInt(s1[1]);
+      int[][] input = new int[n][colors];
 
       for (int i = 0; i < n; i++) {
         String[] s = reader.readLine().split(" ");
-        for (int j = 0; j < 3; j++) {
+        for (int j = 0; j < colors; j++) {
           input[i][j] = Integer.parseInt(s[j]);
         }
       }
 
       //System.out.println(paintHouse(input, -1, n - 1));
 
-      int[][] dp = new int[input.length][3];
+      int[][] dp = new int[input.length][colors];
       // System.out.println(paintHouseMemo(input, -1, n - 1, dp));
 
       System.out.println(paintHouseTabu(input, -1, n,dp));
