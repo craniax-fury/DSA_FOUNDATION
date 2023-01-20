@@ -1,0 +1,2331 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch IterativePreAndPostOrder",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.IterativePreAndPostOrder",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Diameter",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Diameter",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AsciiDifference",
+            "request": "launch",
+            "mainClass": "com.insignia.Strings.AsciiDifference",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PalindromicStrings",
+            "request": "launch",
+            "mainClass": "com.insignia.Strings.PalindromicStrings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PermutationsOfString",
+            "request": "launch",
+            "mainClass": "com.insignia.Strings.PermutationsOfString",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringCompression",
+            "request": "launch",
+            "mainClass": "com.insignia.Strings.StringCompression",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubStringsIterative",
+            "request": "launch",
+            "mainClass": "com.insignia.Strings.SubStringsIterative",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ToggleCase",
+            "request": "launch",
+            "mainClass": "com.insignia.Strings.ToggleCase",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AreMirror",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.AreMirror",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AreSimilar",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.AreSimilar",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CeilAndFloor",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.CeilAndFloor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Constructor",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Constructor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Display",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistanceBwNodes",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.DistanceBwNodes",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Find",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Find",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericTreeMultiSolver",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.GenericTreeMultiSolver",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Height",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Height",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsSymmetric",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.IsSymmetric",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KLargest",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.KLargest",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderLineWise",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.LevelOrderLineWise",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderLineWiseZigZag",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.LevelOrderLineWiseZigZag",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.LevelOrderTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Linearize",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Linearize",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinearizeEfficient",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.LinearizeEfficient",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LowestCommonAncestor",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.LowestCommonAncestor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Max",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Max",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSumSubTree",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.MaxSumSubTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mirror",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Mirror",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NodeToRootPath",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.NodeToRootPath",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PredecessorAndSuccessor",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.PredecessorAndSuccessor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveLeaves",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.RemoveLeaves",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Size",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Size",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Traversals",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.Generic.Traversals",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BarChart",
+            "request": "launch",
+            "mainClass": "com.insignia.arrays.BarChart",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiffOfArrays",
+            "request": "launch",
+            "mainClass": "com.insignia.arrays.DiffOfArrays",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateOfArrays",
+            "request": "launch",
+            "mainClass": "com.insignia.arrays.RotateOfArrays",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfArrays",
+            "request": "launch",
+            "mainClass": "com.insignia.arrays.SumOfArrays",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrangeBuildings",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.ArrangeBuildings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BNSStock1Txn",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.BuySellStocks.BNSStock1Txn",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BNSStockInfiniteTxn",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.BuySellStocks.BNSStockInfiniteTxn",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BNSStockWithCooldownAndInfTxn",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.BuySellStocks.BNSStockWithCooldownAndInfTxn",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BNSStockWithFeeAndInfTxn",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.BuySellStocks.BNSStockWithFeeAndInfTxn",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BNSStockWithKTxn",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.BuySellStocks.BNSStockWithKTxn",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch HighwayBillboard",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.BuySellStocks.HighwayBillboard",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairs",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.ClimbStairs",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairsMinMoves",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.ClimbStairsMinMoves",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairsVarJumps",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.ClimbStairsVarJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChangeCombination",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.CoinChangeCombination",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChangePermutations",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.CoinChangePermutations",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountBinaryStrings",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.CountBinaryStrings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountSubsequence",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.CountSubsequence",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DecodeWays",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.DecodeWays",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FriendsPairing",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.FriendsPairing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch GoldMine",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.GoldMine",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Knapsack01",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.Knapsack01",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnapsackFractional",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.KnapsackFractional",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnapsackUnbounded",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.KnapsackUnbounded",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSumNonAdj",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.MaxSumNonAdj",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinCostInMazeTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.MinCostInMazeTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PaintFence",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.PaintFence",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PaintHouse",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.PaintHouse",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PaintHouseManyColours",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.PaintHouseManyColours",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PartitionIntoSubset",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.PartitionIntoSubset",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TargetSumSubsets",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.TargetSumSubsets",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TilingWith2By1Tiles",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.TilingWith2By1Tiles",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TilingWithMBy1Tiles",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.TilingWithMBy1Tiles",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch fibonacci",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgramming.fibonacci",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrangeBuildings(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.ArrangeBuildings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinaryStrings",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.BinaryStrings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairs(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.ClimbStairs",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairsMinMoves(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.ClimbStairsMinMoves",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbStairsVarJumps(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.ClimbStairsVarJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChange",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.CoinChange",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChangeCombo",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.CoinChangeCombo",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountEncodings",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.CountEncodings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountSequences",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.CountSequences",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FractionalKnapsack",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.FractionalKnapsack",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch GoldMine(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.GoldMine",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestPalindromicSubstring",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.LeetCode.LongestPalindromicSubstring",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestPalindromicSubstringLength",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.LeetCode.LongestPalindromicSubstringLength",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSumNonAdj(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.MaxSumNonAdj",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinCostMazeTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.MinCostMazeTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PaintFence(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.PaintFence",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PaintHouse(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.PaintHouse",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuyAndSellStock2transaction",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.Stocks.BuyAndSellStock2transaction",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuyAndSellStockKtransaction",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.Stocks.BuyAndSellStockKtransaction",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuyAndSellStocksInfinite1",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.Stocks.BuyAndSellStocksInfinite1",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuyAndSellStocksInfiniteWithCooldown",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.Stocks.BuyAndSellStocksInfiniteWithCooldown",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuyAndSellStocksInfiniteWithfee",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.Stocks.BuyAndSellStocksInfiniteWithfee",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TargetSum",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.TargetSum",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnboundedKnapsack",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.UnboundedKnapsack",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZeroOneKnapsack",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.ZeroOneKnapsack",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FriendsPairing(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.checkWithNumberOfWays.FriendsPairing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tiling2Cross1",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.checkWithNumberOfWays.Tiling2Cross1",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TilingMCrossN",
+            "request": "launch",
+            "mainClass": "com.insignia.dynamicProgrammingRecursive.checkWithNumberOfWays.TilingMCrossN",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BenjaminBulbs",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.BenjaminBulbs",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Digits",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.Digits",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DigitsOfANum",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.DigitsOfANum",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FibonacciTillN",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.FibonacciTillN",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch GCD",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.GCD",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch InverseOfANum",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.InverseOfANum",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.LCM",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Prime",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.Prime",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeFactorization",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.PrimeFactorization",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeTillN",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.PrimeTillN",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PythagoreanTriplets",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.PythagoreanTriplets",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseOfANum",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.ReverseOfANum",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateOfANum",
+            "request": "launch",
+            "mainClass": "com.insignia.foundation.RotateOfANum",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CommonElements",
+            "request": "launch",
+            "mainClass": "com.insignia.hashMapAndHeap.CommonElements",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch HighestFreqChar",
+            "request": "launch",
+            "mainClass": "com.insignia.hashMapAndHeap.HighestFreqChar",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "com.insignia.hashMapAndHeap.LongestCommonSubsequence",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddLastInLinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.AddLastInLinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddTwoLinkedLists",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.AddTwoLinkedLists",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomLinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.CustomLinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DisplayReverse",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.DisplayReverse",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DisplayReversePointerRecursive",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.DisplayReversePointerRecursive",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FoldLinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.FoldLinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntersectionPointOfLL",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.IntersectionPointOfLL",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsLinkedListPalindrome",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.IsLinkedListPalindrome",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KthFromLastInLinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.KthFromLastInLinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListToQueueAdapter",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.LinkedListToQueueAdapter",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListToStackAdapter",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.LinkedListToStackAdapter",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Merge2SortedLists",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.Merge2SortedLists",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSortLinkedList$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.MergeSortLinkedList$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch OddEvenList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.OddEvenList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveDuplicates$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.RemoveDuplicates$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseLinkedListRecursive",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.ReverseLinkedListRecursive",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch kReverse",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedList.kReverse",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddFirstNode$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.AddFirstNode$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CopyRandomList$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.CopyRandomList$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DetectCycleInLL$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.DetectCycleInLL$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FoldOfLinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.FoldOfLinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeKSortedLL",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.MergeKSortedLL",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeKSortedLLPriorityQueue",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.MergeKSortedLLPriorityQueue",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSortLL$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.MergeSortLL$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSortedLL",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.MergeSortedLL",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Mid",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.Mid",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSortLL$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.QuickSortLL$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseKGroup$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.ReverseKGroup$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReversePointerIterative",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.ReversePointerIterative",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseUsingAddFirst$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.ReverseUsingAddFirst$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Segregate012Node",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.Segregate012Node",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Segregate01Node",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.Segregate01Node",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SegregateNodesOverLast",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.SegregateNodesOverLast",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch StartingPointOfCycle$LinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.StartingPointOfCycle$LinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnFoldOfLinkedList",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.UnFoldOfLinkedList",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch palindromeLL",
+            "request": "launch",
+            "mainClass": "com.insignia.linkedListLevel2.palindromeLL",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiagonalTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.DiagonalTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.Display",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExitPoint",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.ExitPoint",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MatrixMultiplication",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.MatrixMultiplication",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateBy90",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.RotateBy90",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SaddlePoint",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.SaddlePoint",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchInSortedArray",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.SearchInSortedArray",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShellRotate",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.ShellRotate",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpiralDisplay",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.SpiralDisplay",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaveTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.matrices.WaveTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBase2AnyBase",
+            "request": "launch",
+            "mainClass": "com.insignia.numberSystem.AnyBase2AnyBase",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBase2Dec",
+            "request": "launch",
+            "mainClass": "com.insignia.numberSystem.AnyBase2Dec",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseAddition",
+            "request": "launch",
+            "mainClass": "com.insignia.numberSystem.AnyBaseAddition",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseMultiply",
+            "request": "launch",
+            "mainClass": "com.insignia.numberSystem.AnyBaseMultiply",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseSubstraction",
+            "request": "launch",
+            "mainClass": "com.insignia.numberSystem.AnyBaseSubstraction",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch D2AnyBase",
+            "request": "launch",
+            "mainClass": "com.insignia.numberSystem.D2AnyBase",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern1",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern1",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern10",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern10",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern11",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern11",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern12",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern12",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern13",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern13",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern14",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern14",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern15",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern15",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern16",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern16",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern17",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern17",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern18",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern18",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern19",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern19",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern2",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern2",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern20",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern20",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern3",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern3",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern4",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern4",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern5",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern5",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern6",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern6",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern7",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern7",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern8",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern8",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern9",
+            "request": "launch",
+            "mainClass": "com.insignia.patterns.Pattern9",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MedianPriorityQueue",
+            "request": "launch",
+            "mainClass": "com.insignia.priorityQueue.MedianPriorityQueue",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeKSortedLists",
+            "request": "launch",
+            "mainClass": "com.insignia.priorityQueue.MergeKSortedLists",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PriorityQueueUsingHeap",
+            "request": "launch",
+            "mainClass": "com.insignia.priorityQueue.PriorityQueueUsingHeap",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortKSorted",
+            "request": "launch",
+            "mainClass": "com.insignia.priorityQueue.SortKSorted",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch kLargest",
+            "request": "launch",
+            "mainClass": "com.insignia.priorityQueue.kLargest",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllIndices",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.AllIndices",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Encoding",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.Encoding",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Factorial",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.Factorial",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstIndex",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.FirstIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KeyMapping",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.KeyMapping",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxOfArray",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.MaxOfArray",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazePath",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.MazePath",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazePathWithJumps",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.MazePathWithJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PermutationsOfAString",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.PermutationsOfAString",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Power",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.Power",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PowerLogarithmic",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.PowerLogarithmic",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintDec",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.PrintDec",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintIncDec",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.PrintIncDec",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintIncreasing",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.PrintIncreasing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintZigZag",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.PrintZigZag",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch StairPaths",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.StairPaths",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubSequences",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.SubSequences",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TowerOfHanoi",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.TowerOfHanoi",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloodFill",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.recursionBacktracking.FloodFill",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnightTour",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.recursionBacktracking.KnightTour",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NQueen",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.recursionBacktracking.NQueen",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TargetSumSubset",
+            "request": "launch",
+            "mainClass": "com.insignia.recursion.recursionBacktracking.TargetSumSubset",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllIndex",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.AllIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Decreasing",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Decreasing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstIndex(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.FirstIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloodFill(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.FloodFill",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Increasing",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Increasing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnightTour(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.KnightTour",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Kpc",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Kpc",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LastIndex",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.LastIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Maze",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Maze",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazeJumps",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.MazeJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NQueen(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.NQueen",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Power(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Power",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PowerLogarithmic(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PowerLogarithmic",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintEncodings",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintEncodings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintKpc",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintKpc",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintMazePaths",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintMazePaths",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintMazePathsJumps",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintMazePathsJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintPermutations",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintPermutations",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintStairPaths",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintStairPaths",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintSubsequence",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.PrintSubsequence",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Printar",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Printar",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stairs",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Stairs",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Subsequence",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Subsequence",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TargetSum(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.TargetSum",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Toh",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Toh",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Zigzag",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise.Zigzag",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AllIndex(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.AllIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Decreasing(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.Decreasing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DisplayArray",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.DisplayArray",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DisplayArrayInReverse",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.DisplayArrayInReverse",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Factorial(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.Factorial",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstIndex(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.FirstIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloodFill(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.FloodFill",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Increasing(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.Increasing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IncreasingDecreasing",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.IncreasingDecreasing",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KPC",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.KPC",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KnightTour(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.KnightTour",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LastIndex(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.LastIndex",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinearPower",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.LinearPower",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LogPower",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.LogPower",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxOfArray(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.MaxOfArray",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazePaths",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.MazePaths",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazePathsVarJumps",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.MazePathsVarJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Nqueens",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.Nqueens",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintEncodings(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintEncodings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintKPC",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintKPC",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintMazePaths(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintMazePaths",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintMazePathsVarJumps",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintMazePathsVarJumps",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintPermutations(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintPermutations",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintStairsPath",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintStairsPath",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintSubsequences",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.PrintSubsequences",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Printsubstrings",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.Printsubstrings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch StairPaths(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.StairPaths",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Subsequences",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.Subsequences",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TargetSumSubset(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.TargetSumSubset",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TowerOfHanoi(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.TowerOfHanoi",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZigZagPrint",
+            "request": "launch",
+            "mainClass": "com.insignia.recursionPractise2.ZigZagPrint",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BalancedBrackets",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.BalancedBrackets",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CelebrityProblem",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.CelebrityProblem",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomQueue",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.CustomQueue",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomStack",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.CustomStack",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuplicateBrackets",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.DuplicateBrackets",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DynamicQueue",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.DynamicQueue",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DynamicStack",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.DynamicStack",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch InfixConversions",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.InfixConversions",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch InfixEvaluation",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.InfixEvaluation",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestAreaHistogram",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.LargestAreaHistogram",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeMeetings",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.MergeMeetings",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinStack",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.MinStack",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinStackTricky",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.MinStackTricky",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NextGreaterElementOnRight",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.NextGreaterElementOnRight",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NextGreaterElementOnRightAgain",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.NextGreaterElementOnRightAgain",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PostfixEvalAndConversions",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.PostfixEvalAndConversions",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrefixEvalAndConversions",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.PrefixEvalAndConversions",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch QueueToStackPopEfficient",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.QueueToStackPopEfficient",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SlidingWindowMax",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.SlidingWindowMax",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SmallestNumberForPattern",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.SmallestNumberForPattern",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch StockSpan",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.StockSpan",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoStack1Array",
+            "request": "launch",
+            "mainClass": "com.insignia.stacksAndQueues.TwoStack1Array",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinaryTreeMethods",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.BinaryTreeMethods",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Constructor(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.Constructor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Diameter",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.Diameter",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.Display",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsBalancedBinaryTree",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.IsBalancedBinaryTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsBinarySearchTree",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.IsBinarySearchTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IterativePrePostAndInorderTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.IterativePrePostAndInorderTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KDistanceFar",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.KDistanceFar",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KLevelsDown",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.KLevelsDown",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestBST",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.LargestBST",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeftClonedTree",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.LeftClonedTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderTraversal(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.LevelOrderTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NodeToRootPath(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.NodeToRootPath",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PathToLeavesFromRoot",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.PathToLeavesFromRoot",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveLeaves(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.RemoveLeaves",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseLeftClonedTree",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.ReverseLeftClonedTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch SingleChildNodes",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.SingleChildNodes",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch TiltOfBinaryTree",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.binaryTree.TiltOfBinaryTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AreMirror(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.AreMirror",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch AreSimilar(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.AreSimilar",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch CeilAndFloor(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.CeilAndFloor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Constructor(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Constructor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Diameter(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Diameter",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display(3)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Display",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistanceBwNodes(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.DistanceBwNodes",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Height(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Height",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsSymmetric(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.IsSymmetric",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IterativePreandPostOrder",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.IterativePreandPostOrder",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch KthLargest",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.KthLargest",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelTraversalLineWise",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.LevelTraversalLineWise",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelTraversalZigZag",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.LevelTraversalZigZag",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelTraversals",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.LevelTraversals",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Linearize(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Linearize",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Max(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Max",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSumSubTree(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.MaxSumSubTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MirrorOfTree",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.MirrorOfTree",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NodeToRootPath(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.NodeToRootPath",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrePostTraversals",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.PrePostTraversals",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PredecessorAndSuccessor(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.PredecessorAndSuccessor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveLeaves(2)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.RemoveLeaves",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Size(1)",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.Size",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch lowestCommonAncestor",
+            "request": "launch",
+            "mainClass": "com.insignia.trees.genericTree.lowestCommonAncestor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        }
+    ]
+}
