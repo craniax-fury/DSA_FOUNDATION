@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PathToLeafFromRoot",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.PathToLeafFromRoot",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintKDistanceAway",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.PrintKDistanceAway",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintKLevelDown",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.PrintKLevelDown",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch NodeToRootPath",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.NodeToRootPath",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch IterativeTraversals",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.IterativeTraversals",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.LevelOrderTraversal",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Traversals",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.Traversals",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultiSolver",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.MultiSolver",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Constructor",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.Constructor",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
+            "name": "Launch Display",
+            "request": "launch",
+            "mainClass": "com.insignia.Tree.binaryTree.Display",
+            "projectName": "DSA_FOUNDATION_6dc0fd40"
+        },
+        {
+            "type": "java",
             "name": "Launch IterativePreAndPostOrder",
             "request": "launch",
             "mainClass": "com.insignia.Tree.Generic.IterativePreAndPostOrder",
