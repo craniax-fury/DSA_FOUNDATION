@@ -5,6 +5,15 @@ public class BinaryTreeNode {
     BinaryTreeNode left;
     BinaryTreeNode right;
 
+    BinaryTreeNode(){
+    }
+
+    public BinaryTreeNode(int data,BinaryTreeNode left,BinaryTreeNode right){
+        this.data=data;
+        this.left=left;
+        this.right=right;
+    }
+
     public int getData() {
         return data;
     }

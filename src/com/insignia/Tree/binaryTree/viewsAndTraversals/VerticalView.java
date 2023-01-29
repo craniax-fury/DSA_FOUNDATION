@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -70,6 +71,7 @@ public class VerticalView {
         if (map.containsKey(pair.vlevel)) {
             List<Integer> value = map.get(pair.vlevel);
             value.add(pair.node.getData());
+            Collections.sort(value);
 
             map.put(pair.vlevel, value);
         } else {
