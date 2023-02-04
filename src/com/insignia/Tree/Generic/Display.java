@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import com.insignia.Tree.BinarySearchTree.BSTNode;
+
 public class Display {
 
     public static void display(GenericTreeNode node) {
@@ -38,5 +40,8 @@ public class Display {
 
         }
 
+    }
+
+    public static void display(BSTNode node) {
     }
 }
