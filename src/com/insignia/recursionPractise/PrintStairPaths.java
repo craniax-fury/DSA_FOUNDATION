@@ -2,8 +2,6 @@ package com.insignia.recursionPractise;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.HashMap;
-import java.util.Map;
 
 public class PrintStairPaths {
     public static void main(String[] args) throws Exception {
