@@ -42,17 +42,17 @@ public class BookAllocationProblem {
 
         int index = 0;
 
-        int person = 0;
+        int partition = 0;
 
         int ans = 0;
-        while (index < pages.length && person < people) {
+        while (index < pages.length && partition < people) {
 
             if (ans + pages[index] <= mid) {
                 ans += pages[index];
                 index += 1;
 
             } else {
-                person += 1;
+                partition += 1;
                 ans = 0;
             }
 
