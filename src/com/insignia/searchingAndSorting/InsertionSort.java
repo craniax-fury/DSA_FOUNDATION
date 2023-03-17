@@ -6,46 +6,46 @@ import java.io.InputStreamReader;
 
 public class InsertionSort {
 
-    static void insert(int arr[], int i) {
-        int index = i - 1;
+    public static void insertionSort(int n) throws IOException {
 
-        int ele = arr[i];
+        int[] arr = new int[n];
+        
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
+            arr[0] = Integer.parseInt(br.readLine());
+        
+            for (int index = 1; index < n; index++) {
+                arr[index] = Integer.parseInt(br.readLine());
 
-        while (index >= 0 && arr[index] > ele) {
-            arr[index + 1] = arr[index];
-            index--;
+                int i = index;
 
+                while(i-1>=0 && arr[i-1] > arr[i] ){
+                    swap(arr,i-1,i);
+                    i--;
+                }
+            }
         }
 
-        arr[index + 1] = ele;
+        for(int num: arr){
+            System.out.print(num+" ");
+        }
+
     }
 
-    // Function to sort the array using insertion sort algorithm.
-    public static void insertionSort(int arr[], int n) {
-
-        for (int index = 1; index < n; index++) {
-            insert(arr, index);
+    private static void swap(int[] arr, int index, int sIndex) {
+        if (index == sIndex) {
+            return;
         }
+
+        int temp = arr[index];
+        arr[index] = arr[sIndex];
+        arr[sIndex] = temp;
     }
 
     public static void main(String[] args) throws IOException {
-
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int n = Integer.parseInt(br.readLine());
 
-            int[] input = new int[n];
-
-            int index = 0;
-            while (index < n) {
-                input[index] = Integer.parseInt(br.readLine());
-                index += 1;
-            }
-
-            insertionSort(input,n);
-
-            for(int ele: input){
-                System.out.print(ele+" ");
-            }
+            insertionSort(n);
         }
     }
 }
