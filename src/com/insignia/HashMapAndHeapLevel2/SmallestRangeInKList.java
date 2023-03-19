@@ -17,72 +17,71 @@ import java.util.PriorityQueue;
 
 public class SmallestRangeInKList {
 
-    static class Pair{
+    static class Pair {
         int row;
         int col;
         int val;
 
-        Pair(int row,int col,int val){
-            this.row=row;
-            this.col=col;
-            this.val=val;
+        Pair(int row, int col, int val) {
+            this.row = row;
+            this.col = col;
+            this.val = val;
         }
     }
 
-    public static int[] findSmallestRange(int[][] arr,int n,int k) {
-        
+    public static int[] findSmallestRange(int[][] arr, int n, int k) {
+
         int ansMin = Integer.MAX_VALUE;
         int ansMax = Integer.MIN_VALUE;
 
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
 
-
         Comparator<Pair> comparator = new Comparator<>() {
 
             @Override
             public int compare(Pair p1, Pair p2) {
-                return p1.val-p2.val;
+                return p1.val - p2.val;
             }
         };
 
-        PriorityQueue<Pair> queue = new PriorityQueue<>(comparator);    
-        
+        PriorityQueue<Pair> queue = new PriorityQueue<>(comparator);
+
         int index = 0;
 
-        while(index!=k){
-            queue.add(new Pair(index,0,arr[index][0]));
-            
-            if(arr[index][0]>max){
-                max=arr[index][0];
+        while (index != k) {
+            queue.add(new Pair(index, 0, arr[index][0]));
+
+            if (arr[index][0] > max) {
+                max = arr[index][0];
             }
 
-            index+=1;
+            index += 1;
         }
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             Pair minPair = queue.poll();
 
             min = minPair.val;
 
-            int tempDiff = max - min;
+            int tempDiff = max - min; 
 
-            if(tempDiff < ansMax-ansMin && tempDiff>=0){
+            if (tempDiff < ansMax - ansMin && tempDiff >= 0) {
                 ansMin = min;
                 ansMax = max;
             }
 
-            if(minPair.col+1<n){
-                
-                if(arr[minPair.row][minPair.col+1]>max){
-                    max = arr[minPair.row][minPair.col+1];
+            if (minPair.col + 1 < n) {
+
+                if (arr[minPair.row][minPair.col + 1] > min) {
+                    min = arr[minPair.row][minPair.col + 1];
                 }
 
-                queue.add(new Pair(minPair.row, minPair.col+1, arr[minPair.row][minPair.col+1]));
+                queue.add(new Pair(minPair.row, minPair.col + 1, arr[minPair.row][minPair.col + 1]));
             }
         }
 
-        return new int[]{ansMin,ansMax};
+        return new int[] { ansMin, ansMax };
     }
 
     public static void main(String[] args) throws IOException {
@@ -100,8 +99,8 @@ public class SmallestRangeInKList {
 
             int[] output = findSmallestRange(arr, n, k);
 
-            for(int ele:output){
-                System.out.print(ele+" ");
+            for (int ele : output) {
+                System.out.print(ele + " ");
             }
         }
     }

@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 class Pair {
+    public Pair(int i, int j) {
+    }
     int state;
     BSTNode node;
 }
